@@ -1,3 +1,4 @@
+package es.upm.dit.isst.G16.servlets;
 
 
 import java.io.IOException;
@@ -8,10 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import es.upm.dit.isst.G16.servlets.Professor;
 import es.upm.dit.isst.webLab.dao.TFGDAO;
 import es.upm.dit.isst.webLab.dao.TFGDAOImplementation;
 import es.upm.dit.isst.webLab.dao.model.TFG;
-import es.upm.dit.isst.webLab.servlets.Professor;
 
 
 
