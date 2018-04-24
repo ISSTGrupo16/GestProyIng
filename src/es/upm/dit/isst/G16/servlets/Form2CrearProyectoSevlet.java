@@ -40,7 +40,8 @@ public class Form2CrearProyectoSevlet extends HttpServlet {
 		proy.setGestor(gest);
 		
 		ProyectDAOImplementation.getInstance().createProyect(proy);
-		resp.sendRedirect(req.getContextPath()+"/FormLogin.jsp");
+				
+		resp.sendRedirect(req.getContextPath()+"/LoginGestor.jsp");
 	}
 	
 }
