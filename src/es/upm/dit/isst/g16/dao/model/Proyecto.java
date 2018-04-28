@@ -1,7 +1,10 @@
 package es.upm.dit.isst.g16.dao.model;
 
 import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
@@ -20,7 +23,7 @@ public class Proyecto implements Serializable {
 	private String estadoProyecto;
 	
 	@ManyToOne
-	private String gestorProyecto;
+	private Gestor gestorProyecto;
 	
 	@ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.PERSIST, CascadeType.MERGE})
 	private List<Trabajador> trabajadores;

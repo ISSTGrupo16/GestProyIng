@@ -1,6 +1,7 @@
 package es.upm.dit.isst.g16.dao.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -21,6 +22,55 @@ public class Gestor implements Serializable{
 	private String foto;
 	
 	@OneToMany(mappedBy = "gestorProyecto", fetch = FetchType.EAGER)
-	private List<Proyecto> managedProyects;
+	private List<Proyecto> managedProjects;
 	
+	//Constructor
+	public Gestor() {
+		this.managedProjects = new ArrayList<>();
+	}
+	
+	//Getters
+	public String getEmail() {
+		return this.email;
+	}
+	
+	public String getPass() {
+		return this.pass;
+	}
+	
+	public String getNombre() {
+		return this.nombre;
+	}
+	
+	public String getApellido() {
+		return this.apellido;
+	}
+	
+	public String getFoto() {
+		return this.foto;
+	}
+	
+	public List<Proyecto> getManagedProjects() {
+		return this.managedProjects;
+	}
+	
+	//setters
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public void setPass(String pass) {
+		this.pass = pass;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+	public void setManagedProjects(List<Proyecto> managedProjects) {
+		this.managedProjects = managedProjects;
+	}
 }
