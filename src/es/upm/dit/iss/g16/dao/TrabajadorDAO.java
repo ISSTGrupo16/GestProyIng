@@ -10,6 +10,6 @@ public interface TrabajadorDAO {
 	public List<Trabajador> readAllTrabajador();
 	public void createTrabajador( Trabajador trabajador );	
 	public Trabajador readTrabajador( String email );	
-	public Trabajador updateTrabajador( Trabajador trabajador );	
-	public Trabajador deleteTrabajador( Trabajador trabajador );
+	public void updateTrabajador( Trabajador trabajador );	
+	public void deleteTrabajador( Trabajador trabajador );
 }
