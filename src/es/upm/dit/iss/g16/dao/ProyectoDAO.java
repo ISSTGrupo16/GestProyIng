@@ -8,6 +8,6 @@ public interface ProyectoDAO {
 	public List<Proyecto> readAllProyecto();
 	public void createProyecto( Proyecto proyecto );	
 	public Proyecto readProyecto( int id );	
-	public Proyecto updateProyecto( Proyecto proyecto );	
-	public Proyecto deleteProyecto( Proyecto proyecto );
+	public void updateProyecto( Proyecto proyecto );	
+	public void deleteProyecto( Proyecto proyecto );
 }
